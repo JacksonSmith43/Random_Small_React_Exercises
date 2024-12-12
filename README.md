@@ -1,1 +1,1 @@
-# Random_Small_React_Exercises
+Prompts from here: https://www.reacterry.com/portal/challenges
