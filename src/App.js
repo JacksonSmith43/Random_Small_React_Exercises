@@ -1,9 +1,58 @@
+import { use, useEffect, useRef, useState } from 'react';
 import './App.css';
 
 function App() {
+
+
+  /* Local Storage I stuff. */
+  // 1. Check if something has been inputed.
+  // 2. useState to safe the state of the word.
+  // 
+  const [isWordInputed, setIsWordInputed] = useState(false);
+  const [isSavedWord, setIsSavedWord] = useState();
+  const [isPageReloaded, setIsPageReloaded] = useState();
+
+  const userInput = useRef();
+
+  useEffect(() => {
+    setIsSavedWord(localStorage.setItem("userInput", JSON.stringify(userInput.current.value)));
+  }, [userInput.current]);
+
+
+  function checksReload(){
+    if (performance.getEntriesByType("navigation")[0]?.type === "reload") { // Checks whether the page has been reloaded. /// Needed help here.  
+      setIsPageReloaded(true);
+      console.log("Page reload.");
+
+    } else {
+      setIsPageReloaded(false);
+    }
+
+  }
+
+
   return (
-    <div>Hola.</div>
+    <div className='input-local-storage-container'>
+      <input ref={userInput} onChange={checksReload} value={`${isWordInputed ? JSON.parse(localStorage.getItem('userInput')) : ""}`} type='text' placeholder='Add a word.'></input>
+      <button className='input-button' onClick={handleButtonClick} >Submit</button>
+    </div>
   );
+
+  function handleButtonClick() {
+    console.log("userInput: ", userInput.current.value);
+
+    if (userInput.current.value === "") {
+      setIsWordInputed(false);
+      console.log("Nothing has been inputed.");
+
+    } else {
+      setIsWordInputed(true);
+      setIsSavedWord(userInput.current.value);
+
+
+
+    }
+  }
 }
 
 export default App;
