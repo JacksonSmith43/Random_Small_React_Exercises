@@ -1,4 +1,4 @@
-import { use, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
   }, [userInput.current]);
 
 
-  function checksReload(){
+  function checksReload() {
     if (performance.getEntriesByType("navigation")[0]?.type === "reload") { // Checks whether the page has been reloaded. /// Needed help here.  
       setIsPageReloaded(true);
       console.log("Page reload.");
@@ -34,25 +34,9 @@ function App() {
   return (
     <div className='input-local-storage-container'>
       <input ref={userInput} onChange={checksReload} value={`${isWordInputed ? JSON.parse(localStorage.getItem('userInput')) : ""}`} type='text' placeholder='Add a word.'></input>
-      <button className='input-button' onClick={handleButtonClick} >Submit</button>
     </div>
   );
 
-  function handleButtonClick() {
-    console.log("userInput: ", userInput.current.value);
-
-    if (userInput.current.value === "") {
-      setIsWordInputed(false);
-      console.log("Nothing has been inputed.");
-
-    } else {
-      setIsWordInputed(true);
-      setIsSavedWord(userInput.current.value);
-
-
-
-    }
-  }
 }
 
 export default App;
