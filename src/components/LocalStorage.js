@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import '../App.css';
 
 const LocalStorage = () => {
 
@@ -29,9 +28,12 @@ const LocalStorage = () => {
 
     return (
         <div className='input-local-storage-container'>
+            <h3>Local Storage I:</h3>
             <input ref={userInput} onChange={handleSave} type='text' placeholder='Add a word.'></input>
         </div>
     );
+
+
 
 }
 

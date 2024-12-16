@@ -11,4 +11,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  outline: 0.5rem solid red;
+  padding: 1rem 1rem 1rem 1rem;
 }

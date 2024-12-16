@@ -1,11 +1,12 @@
-//import styled from 'styled-components'
+import styled from 'styled-components'
 
 const ProgressBar = ({ percent = 12 }) => {
-
     return (
-        <div data-testid="wrapper">
+        <div data-testid="progress-bar-container">
+            <h3>Progress Bar:</h3>
             <div data-testid="progress" />
-            <p>Hola.</p>
+            <button></button>
+            <button>2. Progress bar.</button>
         </div>
     );
 };
