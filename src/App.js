@@ -1,6 +1,7 @@
 import './App.css';
 import ProgressBar from './components/ProgressBar';
 import LocalStorage from './components/LocalStorage';
+import CheckboxList from './components/CheckboxList';
 
 function App() {
 
@@ -8,6 +9,8 @@ function App() {
     <>
       <LocalStorage />
       <ProgressBar />
+      <CheckboxList />
+
     </>
   );
 

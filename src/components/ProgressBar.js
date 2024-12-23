@@ -6,7 +6,6 @@ const Progress = styled.button`
     height: 2rem;
     background: green;
     border-radius: 0.5rem;
-    border-color: green;
     transition: width 0.3s ease-in-out;
 `
 
@@ -16,17 +15,16 @@ const ProgressBarContainer = styled.div`
     height: 2rem;
     background-color: rgb(196, 186, 186);
     border-radius: 0.5rem;
-    margin-top: 1rem;
 `
 
 const ProgressBar = ({ percent }) => {
     return (
-        <>
+        <div className='progress-bar-outline'>
             <h3 >Progress Bar:</h3>
             <ProgressBarContainer>
                 <Progress percent={80} />
             </ProgressBarContainer>
-        </>
+        </div>
     );
 };
 
