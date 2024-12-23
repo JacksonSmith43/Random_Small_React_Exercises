@@ -6,6 +6,9 @@ body {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
 
 .input-local-storage-container {
   position: absolute;
