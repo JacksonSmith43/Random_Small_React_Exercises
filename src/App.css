@@ -25,3 +25,12 @@ h3 {
   padding-top: 0.15rem;
   margin-top: 2rem;
 }
+
+
+.styled-button-container {
+  margin-left: 14rem;
+  text-align: center;
+  width: 11rem;
+  height: 9rem;
+  outline: 0.5rem solid red;
+}
