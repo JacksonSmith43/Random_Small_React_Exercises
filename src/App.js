@@ -3,6 +3,7 @@ import ProgressBar from './components/ProgressBar';
 import LocalStorage from './components/LocalStorage';
 import CheckboxList from './components/CheckboxList';
 import HoverButton from './components/HoverButton';
+import MessageFeed from './components/MessageFeed';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <ProgressBar />
       <CheckboxList />
       <HoverButton />
+      <MessageFeed/>
 
     </>
   );
