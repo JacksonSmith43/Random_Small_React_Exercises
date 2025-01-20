@@ -35,7 +35,7 @@ const CheckboxList = () => {
   return (
     <>
       <Container>
-        <h3>Select all checkboxes:</h3>
+        <h4>Select all checkboxes:</h4>
         <CheckboxContainer data-testid="checkbox-container">
           {checkboxes.map((checkbox, index) => (
             <CheckboxLabel key={checkbox.id}>
@@ -63,6 +63,7 @@ const Container = styled.div`
   align-items: flex-start;
   gap: 10px;
   margin: 24px;
+  margin-top: 4rem;
   padding-left: 2rem;
   width: 15rem;
   height: 16rem;

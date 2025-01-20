@@ -23,7 +23,7 @@ const Button = styled.button`
 const HoverButton = () => {
     return (
         <div className='styled-button-container'>
-            <h3>Styled Button:</h3>
+            <h4>Styled Button:</h4>
             <Button className='button-container'>
                 Click me
             </Button>

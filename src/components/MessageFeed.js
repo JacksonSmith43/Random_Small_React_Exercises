@@ -18,6 +18,7 @@ const MessageFeed = () => {
 
   return (
     <MessageFeedContainer>
+      <h4>Submit messages:</h4>
       <MessageContainer data-testid="message-container">
         {messages.map((message, index) => (
           <Message data-testid="message" key={index}>{message}</Message>
@@ -45,7 +46,7 @@ const MessageFeedContainer = styled.div`
   border: 8px solid red;
   border-radius: 5px;
   width: 70%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   padding: 20px;
 `;

@@ -6,16 +6,11 @@ body {
   text-align: center;
 }
 
-h3 {
-  text-align: center;
-}
-
 .input-local-storage-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   outline: 0.5rem solid red;
   padding: 1rem 1rem 1rem 1rem;
+  margin: -2rem 26rem 1rem 38rem;
+  
 }
 
 .progress-bar-outline {
@@ -28,9 +23,10 @@ h3 {
 
 
 .styled-button-container {
-  margin-left: 1.5rem;
   text-align: center;
   width: 11rem;
   height: 9rem;
   outline: 0.5rem solid red;
+  margin-left: 20rem;
+  margin-top: -4rem;
 }
