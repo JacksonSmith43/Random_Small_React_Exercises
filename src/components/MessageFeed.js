@@ -17,11 +17,11 @@ const MessageFeed = () => {
   };
 
   return (
-    <MessageFeedContainer>
-      <h4>Submit messages:</h4>
+    <MessageFeedContainer aria-label='Submit messages.' tabIndex={0}>
+      <h3>Submit messages:</h3>
       <MessageContainer data-testid="message-container">
         {messages.map((message, index) => (
-          <Message data-testid="message" key={index}>{message}</Message>
+          <Message data-testid="message" key={index} tabIndex={0}>{message}</Message>
         ))}
       </MessageContainer>
       <MessageInput
@@ -31,6 +31,7 @@ const MessageFeed = () => {
         onKeyDown={handleChange}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Type your message and press Shift + Enter to send"
+        aria-label='Input field.'
       />
     </MessageFeedContainer>
   );
@@ -39,16 +40,15 @@ const MessageFeed = () => {
 export default MessageFeed;
 
 const MessageFeedContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   justify-content: space-between;
+  text-align: center;
   height: 100%;
   border: 8px solid red;
   border-radius: 5px;
   width: 70%;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  padding: 20px;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 `;
 
 const MessageContainer = styled.div`
@@ -73,6 +73,7 @@ const MessageInput = styled.input`
   border-radius: 5px;
   border: 1px solid #ccc;
   outline: none;
+
   &:focus {
     border-color: #999;
   }

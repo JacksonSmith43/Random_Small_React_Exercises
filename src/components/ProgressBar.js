@@ -19,10 +19,10 @@ const ProgressBarContainer = styled.div`
 
 const ProgressBar = ({ percent }) => {
     return (
-        <div className='progress-bar-outline'>
+        <div className='progress-bar-outline' aria-label='Progressbar field' tabIndex={0}>
             <h3 >Progress Bar:</h3>
-            <ProgressBarContainer>
-                <Progress percent={80} />
+            <ProgressBarContainer >
+                <Progress percent={20} aria-label={`Progress: ${percent}%`} />
             </ProgressBarContainer>
         </div>
     );

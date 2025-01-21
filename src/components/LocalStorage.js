@@ -27,9 +27,9 @@ const LocalStorage = () => {
     }
 
     return (
-        <div className='input-local-storage-container'>
+        <div className='input-local-storage-container' tabIndex={0} aria-label='input something for local storage.'>
             <h3>Local Storage I:</h3>
-            <input ref={userInput} onChange={handleSave} type='text' placeholder='Add a word.'></input>
+            <input ref={userInput} onChange={handleSave} type='text' placeholder='Add a word.' aria-label='Input.'></input>
         </div>
     );
 

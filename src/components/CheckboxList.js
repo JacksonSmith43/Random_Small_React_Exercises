@@ -34,8 +34,8 @@ const CheckboxList = () => {
 
   return (
     <>
-      <Container>
-        <h4>Select all checkboxes:</h4>
+      <Container tabIndex={0} aria-label='Select all checkboxes.'>
+        <h3>Select all checkboxes:</h3>
         <CheckboxContainer data-testid="checkbox-container">
           {checkboxes.map((checkbox, index) => (
             <CheckboxLabel key={checkbox.id}>
@@ -49,7 +49,7 @@ const CheckboxList = () => {
             </CheckboxLabel>
           ))}
         </CheckboxContainer>
-        <SelectAllButton data-testid="button" onClick={toggleCheckbox} >Select All</SelectAllButton>
+        <SelectAllButton data-testid="button" onClick={toggleCheckbox} aria-label='Select all input fields button.'>Select All</SelectAllButton>
       </Container>
     </>
   );
@@ -58,16 +58,14 @@ const CheckboxList = () => {
 export default CheckboxList;
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: inline-block;
   gap: 10px;
-  margin: 24px;
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-left: 2rem;
   width: 15rem;
   height: 16rem;
   outline: 0.5rem solid red;
+  
 `;
 
 const CheckboxContainer = styled.div`

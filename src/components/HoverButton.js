@@ -19,15 +19,25 @@ const Button = styled.button`
     }
 `
 
+const ButtonContainer = styled.div`
+    display: inline-block;
+    text-align: center;
+    width: 11rem;
+    height: 9rem;
+    outline: 0.5rem solid red;
+    padding-top: 0.15rem;
+    margin: 1rem 1rem;
+`
+
 
 const HoverButton = () => {
     return (
-        <div className='styled-button-container'>
-            <h4>Styled Button:</h4>
-            <Button className='button-container'>
+        <ButtonContainer aria-label='Styled button.' tabIndex={0}>
+            <h3>Styled Button:</h3>
+            <Button className='button-container' aria-label='Click me button.'>
                 Click me
             </Button>
-        </div>
+        </ButtonContainer>
     );
 }
 
