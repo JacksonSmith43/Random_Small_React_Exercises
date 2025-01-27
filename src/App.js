@@ -6,6 +6,7 @@ import HoverButton from './components/HoverButton';
 import MessageFeed from './components/MessageFeed';
 import HoverCounter from './components/HoverCounter';
 import DisableButton from './components/DisableButton';
+import TemperatureConverter from './components/TemperatureConverter';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <DisableButton />
       <LocalStorage />
       <HoverButton />
+      <TemperatureConverter />
 
     </>
   );

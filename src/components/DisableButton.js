@@ -8,9 +8,9 @@ const DisableButton = () => {
 
 
     useEffect(() => {
-        console.log("E: inputValue", inputValue);
+        /*console.log("E: inputValue", inputValue);
         console.log("E: disableButton", disableButton);
-        console.log("E: inputValue?.length", inputValue?.length);
+        console.log("E: inputValue?.length", inputValue?.length);*/
 
         if (inputValue?.length >= 3) { // inputValue?.length = Returns undefined when inputValue does not exist, instead of an error. 
             console.log(">");
