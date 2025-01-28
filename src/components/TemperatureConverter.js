@@ -46,6 +46,7 @@ const TemperatureConverter = () => {
 
 const TemperatureConverterContainer = styled.div`
     outline: 0.5rem solid red;
+    display: inline-block;
     padding: 1rem 1rem;
     width: 15rem;
     margin-left: 1rem;

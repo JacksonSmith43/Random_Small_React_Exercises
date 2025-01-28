@@ -7,6 +7,7 @@ import MessageFeed from './components/MessageFeed';
 import HoverCounter from './components/HoverCounter';
 import DisableButton from './components/DisableButton';
 import TemperatureConverter from './components/TemperatureConverter';
+import ClickMe from './components/ClickMe';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <LocalStorage />
       <HoverButton />
       <TemperatureConverter />
+      <ClickMe />
 
     </>
   );
