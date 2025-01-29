@@ -8,6 +8,7 @@ import HoverCounter from './components/HoverCounter';
 import DisableButton from './components/DisableButton';
 import TemperatureConverter from './components/TemperatureConverter';
 import ClickMe from './components/ClickMe';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <HoverButton />
       <TemperatureConverter />
       <ClickMe />
+      <Counter/>
 
     </>
   );

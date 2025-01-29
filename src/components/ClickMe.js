@@ -9,8 +9,8 @@ const ClickMe = () => {
 
     return (
         <ButtonContainer>
-            <h3>Click me:</h3>
-            <Button onClick={handleButtonClick}>Click me</Button>
+            <h3 tabIndex={0}>Click me:</h3>
+            <Button onClick={handleButtonClick} aria-label="Click me button.">Click me</Button>
         </ButtonContainer>
     )
 

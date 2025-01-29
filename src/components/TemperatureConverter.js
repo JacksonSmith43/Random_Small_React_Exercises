@@ -20,7 +20,7 @@ const TemperatureConverter = () => {
 
     return (
         <TemperatureConverterContainer>
-            <h3>Temperature Converter:</h3>
+            <h3 tabIndex={0}>Temperature Converter:</h3>
 
             <form>
                 <input
@@ -31,11 +31,11 @@ const TemperatureConverter = () => {
                     aria-label="Temperature input field."
                     onChange={temperatureCalculator} // Same as: onChange={(e) => temperatureCalculator(e)}
                 />
-                <label htmlFor="input">°C</label>
+                <label htmlFor="input" tabIndex={0} aria-label="Celsius.">°C</label>
 
             </form>
 
-            <p data-testid='output' className="temperature-output">
+            <p data-testid='output' className="temperature-output" tabIndex={0}>
                 {kelvin} Kelvin {fahrenheit} °F
             </p>
         </TemperatureConverterContainer>
