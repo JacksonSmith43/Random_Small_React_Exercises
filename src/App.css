@@ -31,3 +31,12 @@ h3 {
 .temperature-output {
   text-align: center;
 }
+
+.fix-counter{
+  display: inline-block;
+  text-align: center;
+  outline: 0.5rem solid red;
+  width: 10rem;
+  height: 8rem;
+  margin-left: 2rem;
+}

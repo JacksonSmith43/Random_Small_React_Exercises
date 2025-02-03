@@ -38,6 +38,7 @@ const ButtonsContainer = styled.div`
     height: 8rem;
     text-align: center;
     margin-left: 2rem;
+    margin-top: 2rem;
 `
 
 const CounterOutput = styled.h4`

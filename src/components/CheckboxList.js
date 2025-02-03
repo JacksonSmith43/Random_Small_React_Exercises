@@ -60,7 +60,7 @@ export default CheckboxList;
 const Container = styled.div`
   display: inline-block;
   gap: 10px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-left: 2rem;
   width: 15rem;
   height: 16rem;

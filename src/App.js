@@ -9,9 +9,10 @@ import DisableButton from './components/DisableButton';
 import TemperatureConverter from './components/TemperatureConverter';
 import ClickMe from './components/ClickMe';
 import Counter from './components/Counter';
+import FixSyntaxErrorsClassCounter from './components/FixSyntaxErrorsClassCounter';
 
 function App() {
-
+ 
   return (
     <>
       <ProgressBar />
@@ -23,7 +24,8 @@ function App() {
       <HoverButton />
       <TemperatureConverter />
       <ClickMe />
-      <Counter/>
+      <Counter />
+      <FixSyntaxErrorsClassCounter />
 
     </>
   );

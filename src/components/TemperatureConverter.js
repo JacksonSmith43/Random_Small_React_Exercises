@@ -50,7 +50,7 @@ const TemperatureConverterContainer = styled.div`
     padding: 1rem 1rem;
     width: 15rem;
     margin-left: 1rem;
-    
+    margin-top: 2rem;
 `
 
 
