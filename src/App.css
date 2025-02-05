@@ -32,11 +32,22 @@ h3 {
   text-align: center;
 }
 
-.fix-counter{
+.fix-counter {
   display: inline-block;
   text-align: center;
   outline: 0.5rem solid red;
   width: 10rem;
   height: 8rem;
   margin-left: 2rem;
+}
+
+
+.errors-in-programming-container {
+  display: inline-block;
+  text-align: center;
+  outline: 0.5rem solid red;
+  width: 50rem;
+  height: 20rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }

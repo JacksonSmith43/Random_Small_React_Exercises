@@ -10,9 +10,10 @@ import TemperatureConverter from './components/TemperatureConverter';
 import ClickMe from './components/ClickMe';
 import Counter from './components/Counter';
 import FixSyntaxErrorsClassCounter from './components/FixSyntaxErrorsClassCounter';
+import FixSyntaxErrorsFunctional from './components/FixSyntaxErrorsFunctional'
 
 function App() {
- 
+
   return (
     <>
       <ProgressBar />
@@ -26,6 +27,7 @@ function App() {
       <ClickMe />
       <Counter />
       <FixSyntaxErrorsClassCounter />
+      <FixSyntaxErrorsFunctional />
 
     </>
   );
