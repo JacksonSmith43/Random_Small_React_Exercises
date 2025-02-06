@@ -18,26 +18,6 @@ const ProgressBarContainer = styled.div`
     background-color: rgb(196, 186, 186);
     border-radius: 0.5rem;
 
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        background: red;
-    }
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-        background: blue;
-    }
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-        background: green;
-    }
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
-        background: orange;
-    }
-    
-    @media (max-width: ${({ theme }) => theme.breakpoints.largeScreen}) {
-        background: pink;
-    }
 `
 
 const ProgressBar = ({ percent }) => {
