@@ -11,24 +11,27 @@ import ClickMe from './components/ClickMe';
 import Counter from './components/Counter';
 import FixSyntaxErrorsClassCounter from './components/FixSyntaxErrorsClassCounter';
 import FixSyntaxErrorsFunctional from './components/FixSyntaxErrorsFunctional'
+import { theme } from './components/styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
 
 function App() {
 
   return (
     <>
-      <ProgressBar />
-      <MessageFeed />
-      <CheckboxList />
-      <HoverCounter />
-      <DisableButton />
-      <LocalStorage />
-      <HoverButton />
-      <TemperatureConverter />
-      <ClickMe />
-      <Counter />
-      <FixSyntaxErrorsClassCounter />
-      <FixSyntaxErrorsFunctional />
-
+      <ThemeProvider theme={theme}>
+        <ProgressBar />
+        <MessageFeed />
+        <CheckboxList />
+        <HoverCounter />
+        <DisableButton />
+        <LocalStorage />
+        <HoverButton />
+        <TemperatureConverter />
+        <ClickMe />
+        <Counter />
+        <FixSyntaxErrorsClassCounter />
+        <FixSyntaxErrorsFunctional />
+      </ThemeProvider>
     </>
   );
 

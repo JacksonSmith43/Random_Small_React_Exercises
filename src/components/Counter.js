@@ -29,7 +29,6 @@ const Counter = () => {
 }
 
 const Button = styled.button`
-    margin-left: 0.5rem;
 `
 const ButtonsContainer = styled.div`
     display: inline-block;
@@ -37,8 +36,8 @@ const ButtonsContainer = styled.div`
     width: 14rem;
     height: 8rem;
     text-align: center;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin: ${({ theme }) => theme.spacing.small};
+
 `
 
 const CounterOutput = styled.h4`

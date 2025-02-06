@@ -25,8 +25,8 @@ const ButtonContainer = styled.div`
     width: 11rem;
     height: 9rem;
     outline: 0.5rem solid red;
-    padding-top: 0.15rem;
-    margin: 1rem 1rem;
+    margin: ${({ theme }) => theme.spacing.small};
+
 `
 
 

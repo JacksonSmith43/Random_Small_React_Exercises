@@ -54,8 +54,7 @@ const DisableButtonContainer = styled.div`
     outline: 0.5rem solid red;
     width: 19rem;
     height: 6rem;
-    padding-top: 0.15rem;
-    margin: 1rem 1rem;
+    margin: ${({ theme }) => theme.spacing.small};
 
 `
 

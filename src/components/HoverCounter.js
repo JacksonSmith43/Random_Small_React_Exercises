@@ -39,8 +39,8 @@ const HoverCounterContainer = styled.div`
     outline: 0.5rem solid red;
     width: 10rem;
     height: 12rem;
-    margin: 1rem 2rem;
-    padding-top: 0.15rem;
+    margin: ${({ theme }) => theme.spacing.small};
+
 `
 
 const CounterOutput = styled.p`

@@ -25,8 +25,9 @@ const ButtonContainer = styled.div`
     width: 8rem;
     height: 7rem;
     display: inline-block;
-    margin-left: 2rem;
     text-align: center;
+    margin: ${({ theme }) => theme.spacing.small};
+
 `
 
 export default ClickMe;

@@ -45,10 +45,11 @@ const MessageFeedContainer = styled.div`
   text-align: center;
   height: 100%;
   border: 8px solid red;
-  border-radius: 5px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   width: 70%;
-  margin: 1rem 1rem 1rem 1rem;
-  padding: 1rem;
+  padding: ${({ theme }) => theme.spacing.small};
+  margin: ${({ theme }) => theme.spacing.small};
+
 `;
 
 const MessageContainer = styled.div`
@@ -57,22 +58,22 @@ const MessageContainer = styled.div`
   overflow-y: scroll;
   max-height: 80vh;
   width: 100%;
-  margin-bottom: 10px;
+  margin: ${({ theme }) => theme.spacing.small};
+
 `;
 
 const Message = styled.div`
   background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-`;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  margin: ${({ theme }) => theme.spacing.small};
+
+  `;
 
 const MessageInput = styled.input`
   width: 95%;
-  padding: 10px;
+  padding: ${({ theme }) => theme.spacing.small};
   border-radius: 5px;
   border: 1px solid #ccc;
-  outline: none;
 
   &:focus {
     border-color: #999;

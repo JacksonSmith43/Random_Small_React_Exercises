@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { theme } from './styles/GlobalStyles';
+
 // REMINDER: Needed a bit of help here. For example: const Progress = styled.button vs. HTML and CSS Code and where what is allowed to be 
 
 const Progress = styled.button` 
@@ -12,9 +14,30 @@ const Progress = styled.button`
 // styled.div created a new React component that is a styled div Element. 
 const ProgressBarContainer = styled.div`    
     width: 100%;
-    height: 2rem;
+    height: ${({ theme }) => theme.buttonSize.width};    
     background-color: rgb(196, 186, 186);
     border-radius: 0.5rem;
+
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        background: red;
+    }
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        background: blue;
+    }
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
+        background: green;
+    }
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        background: orange;
+    }
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.largeScreen}) {
+        background: pink;
+    }
 `
 
 const ProgressBar = ({ percent }) => {

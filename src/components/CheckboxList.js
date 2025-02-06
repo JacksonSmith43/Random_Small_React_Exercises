@@ -60,18 +60,19 @@ export default CheckboxList;
 const Container = styled.div`
   display: inline-block;
   gap: 10px;
-  margin-top: 1rem;
-  padding-left: 2rem;
+  padding: ${({ theme }) => theme.spacing.small};
   width: 15rem;
   height: 16rem;
   outline: 0.5rem solid red;
-  
+  margin: ${({ theme }) => theme.spacing.small};
+
 `;
 
 const CheckboxContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
+
 `;
 
 const CheckboxLabel = styled.label`
@@ -81,14 +82,14 @@ const CheckboxLabel = styled.label`
 `;
 
 const SelectAllButton = styled.button`
-  padding: 10px 20px;
+  padding: ${({ theme }) => theme.spacing.small};
+  margin: ${({ theme }) => theme.spacing.small};
   font-size: 18px;
   border: none;
   border-radius: 4px;
   background-color: #333;
   color: #fff;
   cursor: pointer;
-  margin-top: 24px;
 
   &:hover {
     opacity: 0.8;

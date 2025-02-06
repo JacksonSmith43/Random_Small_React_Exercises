@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-
 const TemperatureConverter = () => {
     const [kelvin, setKelvin] = useState(0);
     const [fahrenheit, setFahrenheit] = useState(0);
@@ -49,8 +48,8 @@ const TemperatureConverterContainer = styled.div`
     display: inline-block;
     padding: 1rem 1rem;
     width: 15rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
+    margin: ${({ theme }) => theme.spacing.small};
+
 `
 
 
